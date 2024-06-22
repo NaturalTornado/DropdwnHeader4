@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <button ng-click="toggleDropdown()">Menu</button>
+            <div ng-show="isDropdownVisible" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="quote.html">Quote and Price Estimate Builder</a>
+                <a href="contract.html">Contract and Document Management</a>
+                <a href="scheduling.html">Scheduling and Labor Management</a>
+                <a href="project.html">Project Management</a>
+                <a href="financial.html">Financial Management</a>
+                <a href="crm.html">Client Relationship Management (CRM)</a>
+                <a href="reporting.html">Reporting and Analytics</a>
+                <a href="mobile.html">Mobile Accessibility</a>
+                <a href="integration.html">Integration Capabilities</a>
+                <a href="security.html">Security and Compliance</a>
+            </div>
+        </nav>
+    </header>
+    <section id="content">
+        <div id="menuItems">{{selectedItem}}</div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
