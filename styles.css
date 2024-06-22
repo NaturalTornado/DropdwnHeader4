@@ -22,7 +22,7 @@ button {
 }
 
 .dropdown-content {
-    display: none;
+    display: none; /* Ensure it is hidden by default */
     position: absolute;
     background-color: #f1f1f1;
     min-width: 250px; /* Adjusted width to accommodate longer text */
